@@ -1,0 +1,291 @@
+body{
+	background: #fafafa;
+}
+img{ vertical-align: middle; box-sizing: content-box; }
+.fixed{
+	width:100px;
+	height:150px;
+	position: fixed;
+	top:550px;
+	right:0;
+	z-index: 3;
+	img{
+		position: absolute;
+		top:-88px;
+		right:10px;
+		z-index: 3;
+	}
+	.call{
+		position: absolute;
+		right: 0;
+		display: block;
+		width:80px;
+		height:50px;
+		background: #fff;
+		a{
+			text-align: right;
+			font-size: 14px;
+			display: block;
+			background:url(../images/button_121.jpg) no-repeat 5px 1px;
+		}
+	}
+}
+.home_auto{
+	margin:0 auto;
+	width:1200px;
+	.home_focus{
+		.focus_show{
+			width:1200px;
+			height:160px;
+			margin:15px auto;
+			img{
+				display: block;
+				float: left;
+				// margin-left:10px;
+			}
+			img:nth-child(1){
+				margin-right: 12px;
+			}
+			img:nth-child(2){
+				margin-right: 12px;
+			}
+			img:nth-child(3){
+				margin-right: 12px;
+			}
+		}
+	}
+	.hotsale .container { 
+		width: 100%; height: 590px; }
+	.hotsale .container .hot_banner { 
+		width: 232px; height: 100%; float: left;
+		 background: #f0f0f0; }
+	.hotsale .container .index_card_container { 
+		width: 968px; float: left; }
+	.hotsale .container .index_card_container a { 
+		background: #FFF; float: left; 
+		margin-bottom: 10px; 
+		margin-left: 10px; width: 232px; height: 290px; }
+	.hotsale .container .index_card_container a img {
+	 	margin: 34px auto 0;
+	 	width: 134px; height: 134px;
+	 	 display: block; }
+	.hotsale .container .index_card_container a .pro_title { 
+		font-size: 14px; 
+		font-weight: 400; 
+		color: #3a3a3a; 
+		overflow: hidden; 
+		line-height: 24px; 
+		height: 24px; white-space: nowrap; 
+		text-overflow: ellipsis; 
+		padding-top: 14px; margin: 16px 20px 2px; 
+		text-align: center; }
+	.hotsale .container .index_card_container a del { 
+		font-size: 12px; font-weight: 400; 
+		color: #a4a4a4; 
+		text-decoration: line-through; 
+		overflow: hidden; text-overflow: ellipsis; 
+		white-space: nowrap; line-height: 24px; 
+		display: block; text-align: center; }
+	.hotsale .container .index_card_container a .pro_price { 
+		font-size: 14px; font-weight: 400; 
+		color: #cc0e11; text-align: center; 
+		overflow: hidden; text-overflow: ellipsis; 
+		white-space: nowrap; 
+		line-height: 24px; }
+	.hotsale .container .index_card_container a .pro_price:hover { 
+		color: #cc0e11; }
+	.home_layer_title { 
+		padding: 30px 0 15px 0; 
+		line-height: 1; }
+	.home_layer_title h3 { 
+		float: left; 
+		color: #3a3a3a; 
+		font-size: 22px; 
+		font-weight: 400; 
+		display: inline-block; }
+
+	.home_pul_box_shadow {
+		-webkit-transition: all 0.25s ease-in-out;transition: 
+		all 0.25s ease-in-out;
+		position: relative;
+		top: 0;
+		z-index: 1;}
+	.home_pul_box_shadow:hover { 
+		top: -2px; 
+		box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3); }
+	.home_fouse { 
+		height: 450px; 
+		position: relative; 
+		width: 100%; 
+		margin: 0 auto;  
+		max-width: 1920px}
+	.home_fouse img { 
+		display: block; 
+		width: 1920px; 
+		height: 450px; }
+
+	.home_activity { position: relative; }
+	/* .home_activity header .more { 
+		float: right; 
+		padding: 0 14px; 
+		font-size: 14px; color: #666; 
+		text-align: center; } */
+	.home_activity .act_content { overflow: hidden; height: 290px; }
+	.home_activity ul li { 
+		display: block; 
+		float: left; 
+		position: relative; }
+	.home_activity ul li a { 
+		display: block; 
+		text-align: center; 
+		text-decoration: none; width: 100%; 
+		height: 100%; position: relative; 
+		color: #333; }
+	.home_activity ul li a img { 
+		margin: 0 auto; 
+		display: block; }
+	.home_activity ul li a .pro_title { 
+		font-size: 14px; 
+		font-weight: 400; 
+		color: #3a3a3a; 
+		text-align: center; }
+	.home_activity ul li a del { 
+		font-size: 12px; font-weight: 400; 
+		color: #a4a4a4; 
+		text-decoration: line-through; 
+		overflow: hidden; 
+		text-overflow: ellipsis; 
+		white-space: nowrap; 
+		line-height: 24px; 
+		display: block; 
+		text-align: center; }
+	.home_activity ul li a .pro_price { 
+		text-align: center; 
+		overflow: hidden; 
+		text-overflow: ellipsis; 
+		white-space: nowrap; }
+	.recommend .control { 
+		// overflow: hidden; 
+		height: 290px; 
+		position: absolute; 
+		bottom: 0; 
+		left: 0; }
+	.recommend .control i {
+		background: rgba(204, 204, 204, 0.9);
+		cursor: pointer; 
+		height: 75px; 
+		width: 22px; 
+		position: absolute; 
+		margin-top: -37.5px; top: 50%; 
+		z-index: 3; line-height: 75px; text-align: center; 
+		font-size: 24px; color: #fff; }
+	.recommend .control i:hover { background: rgba(153, 153, 153, 0.9); }
+	.recommend .control #home_rec_left { left: 0; }
+	.recommend .control #home_rec_right { left:1180px; }
+	.recommend .act_content { padding: 12px 0; }
+	.recommend .act_content ul li { 
+		width: 217px; 
+		height: 290px; background: #FFF; 
+		border-left: 1px solid #f5f5f5; 
+		margin-top: 6px; }
+	.recommend .act_content ul li:nth-child(1) { border: 0; }
+	.recommend .act_content ul li a img { 
+		width: 134px; 
+		height: 134px; padding-top: 34px; }
+	.recommend .act_content ul li a .pro_title { 
+		overflow: hidden; 
+		line-height: 24px; height: 24px; 
+		white-space: nowrap; text-overflow: ellipsis; 
+		padding-top: 14px; 
+		margin: 16px 20px 2px; }
+	.recommend .act_content ul li a .pro_price { 
+		font-size: 14px; 
+		font-weight: 400; 
+		color: #cc0e11; 
+		line-height: 24px; }
+	.recommend .act_content ul li a .pro_price:hover { color: #cc0e11; }
+
+
+	.home_floor { background: #fafafa; }
+	.home_floor .home_layer_title { position: relative; }
+	.home_floor .home_layer_title .floor_nav { 
+		line-height: 22px; 
+		margin-left: 28px; 
+		float: left; 
+		max-width: 925px; 
+
+	}
+	.home_floor .home_layer_title .floor_nav li { float: left; clear: right;}
+	.home_floor .home_layer_title .floor_nav li a, .home_floor .home_layer_title .floor_nav li i { 
+		-webkit-transition: all 0.25s ease-in-out; 
+		transition: all 0.25s ease-in-out; }
+	.home_floor .home_layer_title .floor_nav li a { 
+		display: inline-block; 
+		font-size: 16px; margin: 0 10px; 
+		color: #a4a4a4; position: relative; 
+		line-height: 22px; }
+	.home_floor .home_layer_title .floor_nav li a::after { 
+		content: ''; 
+		background: #ca151d; display: block; 
+		width: 0; position: absolute; 
+		bottom: -4px; left: 0; 
+		height: 2px; }
+	.home_floor .home_layer_title .floor_nav li a:hover { color: #ca151d; }
+	.home_floor .home_layer_title .floor_nav li a:hover::after { width: 100%; }
+	.home_floor .home_layer_title .more { 
+		float: right; 
+		padding: 0 14px; 
+		font-size: 14px; 
+		color: #666; 
+		text-align: center;}
+	.home_floor .floor_body{
+		margin-top: 20px;
+	}
+	.home_floor .floor_body .floor_goods ul { 
+		width: 1212px; 
+		margin-left: -12px; height: 704px; 
+		position: relative; }
+	.home_floor .floor_body .floor_goods ul.costpoint { height: 352px; }
+	.home_floor .floor_body .floor_goods ul li.floor_show { background: #f0f0f0; }
+	.home_floor .floor_body .floor_goods ul li { height: 346px; 
+		width: 291px; margin-left: 12px; 
+		margin-bottom: 12px; background: #FFF; 
+		float: left; position: relative; }
+	.home_floor .floor_body .floor_goods ul li a { display: inline-block; 
+		width: 100%; height: 100%; 
+		text-align: center; }
+	.home_floor .floor_body .floor_goods ul li a div.admanage img { width: 100%; 
+		height: 100%; padding-top: 0; }
+	.home_floor .floor_body .floor_goods ul li a .floor_goods_img { 
+		margin: 10px auto; 
+		display: block; width: 170px; height: 170px; 
+		padding-top: 29px; -webkit-transition: all 0.25s ease-in-out; 
+		transition: all 0.25s ease-in-out; }
+	.home_floor .floor_body .floor_goods ul li a .pro_title { 
+		overflow: hidden; 
+		line-height: 30px; height: 30px; 
+		white-space: nowrap; text-overflow: ellipsis; 
+		margin: 10px auto 0px; width: 170px; 
+		font-size: 14px; 
+		font-weight: 400; color: #3a3a3a; 
+		text-align: center; }
+	.home_floor .floor_body .floor_goods ul li a del { 
+		font-size: 12px; 
+		font-weight: 400; color: #a4a4a4; 
+		text-decoration: line-through; 
+		overflow: hidden; text-overflow: ellipsis; 
+		white-space: nowrap; line-height: 24px; 
+		display: block; text-align: center; }
+	.home_floor .floor_body .floor_goods ul li a .pro_price { 
+		text-align: center; 
+		overflow: hidden; 
+		text-overflow: ellipsis; 
+		white-space: nowrap; 
+		margin: 10px auto 0px; 
+		width: 170px; font-size: 14px; 
+		font-weight: 400; 
+		color: #cc0e11; 
+		line-height: 24px; }
+
+	 
+}

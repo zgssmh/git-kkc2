@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>跨客城</title>
+		<!-- <link rel="stylesheet" href="font/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/foot.css">
+		<link rel="stylesheet" href="css/cart.css">
+		<script src = 'js/require.js' async="true" defer data-main = 'js/main'></script>
+		<script src="js/header.js"></script>
+		
+		<link href = "css/css.css" rel = "stylesheet" type = "text/css" />
+		
+		<script type = "text/javascript" src="js/jquery.cookie.js"></script> -->
+		<link rel="stylesheet" href="css/cart.css">
+		<script src="js/cart.js"></script>
+	</head>
+	<body>
+		<div class="headerpage"></div>
+
+
+		<!--主要模板内容 开始-->
+		<div class="home_content">
+		<section class="breadcrumb">
+			<span>您当前的位置：</span> <a href="/">首页</a> » 购物车
+		</section>
+		<section class="web">
+			<!-- <div id="cart_prompt" class="cart_prompts none">
+				<strong>恭喜，您的订单已经满足了以下优惠活动！</strong>
+				<ol id="cart_prompt_box"></ol>
+			</div>
+			促销规则模板 -->
+			<script type="text/html" id="promotionTemplate">
+				<li><%=item['plan']%>，<%=item['info']%></li>
+			</script>
+		
+			<section class="cart_table">
+				<h3><i class="fa fa-shopping-cart"></i>查看购物车</h3>
+				<table>
+					<colgroup>
+						<col width="30px">
+						<col width="115px">
+						<col>
+						<col width="120px">
+						<col width="120px">
+						<col width="120px">
+						<col width="116px">
+						<col width="120px">
+						<col width="120px">
+					</colgroup>
+					<thead>
+						<tr><th><input type="checkbox" name="_selectCartGoods" onchange="selectAll('selectCartGoods');" /></th><th>图片</th><th>商品名称</th><th>赠送积分</th><th>单价</th><th>优惠</th><th>数量</th><th>小计</th><th>操作</th></tr>
+					</thead>
+					<tbody>
+						
+						<tr>
+							<td colspan="9" class="stats">
+								<span>商品总重量：<b id='weight'>0g</b></span><br>
+								<span>商品总金额：￥<b id='origin_price'>0</b> - 商品优惠：￥<b id='discount_price'>0</b> - 促销活动优惠：￥<b id='promotion_price'>0</b></span><br>
+								金额总计（不含运费）：￥<em id='sum_price'>0</em>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="cart_btn">
+					<div class="clear_cart_btn" onclick="delModel({msg:'确定要清空购物车么？',link:'/simple/clearCart'});">
+						<i class="fa fa-remove"></i>
+						<span>清空购物车</span>
+					</div>
+					<div class="go_back_btn" onclick="window.history.go(-1);">
+						<i class="fa fa-reply"></i>
+						<span>继续购物</span>
+					</div>
+						</div>
+			</section>
+		</section>
+		<script type="text/javascript">
+			function check_user_islogin(){
+				$.getJSON(creatUrl("simple/is_login"),function(content){
+					if(content==true){
+						location.href = '/simple/cart2';
+					}else{
+						$('.dlzc_tk').show();
+						var counTrHtml = template.render('mobileloginTemplate');
+						$('.dlzc_close').after(counTrHtml);
+						jigsawdl.init(document.getElementById('captchadl'));
+						return false;
+					}
+				})
+			}
+		</script>
+		</div>
+
+
+
+		<!-- 底部开始 -->
+		<div class="footerpage"></div>	
+	<script src = 'js/jquery-1.10.1.min.js'></script>
+	<script>
+	    $(function(){
+	        $(".headerpage").load("header.html");
+	        $(".footerpage").load("footer.html");
+	    })
+	</script>
+	</body>
+</html>	

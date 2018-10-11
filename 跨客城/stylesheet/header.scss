@@ -1,0 +1,237 @@
+.fixed{
+	width:100px;
+	height:150px;
+	position: fixed;
+	top:550px;
+	right:0;
+	z-index: 3;
+	img{
+		position: absolute;
+		top:-88px;
+		right:10px;
+		z-index: 3;
+	}
+	.call{
+		position: absolute;
+		right: 0;
+		display: block;
+		width:80px;
+		height:50px;
+		background: #fff;
+		a{
+			text-align: right;
+			font-size: 14px;
+			display: block;
+			background:url(../images/button_121.jpg) no-repeat 5px 1px;
+		}
+	}
+}
+#header_div1{
+	height:31px;
+	// line-height: 31px;
+	border-bottom: 1px solid #eaeaea;
+	background:#fafafa;
+	font-size: 12px;
+	article{
+		width:1200px;
+		margin:0 auto;
+		span{
+			float: left;
+			margin-right:822px;
+			color:#a4a4a4;
+			margin-top: 8px;
+		}
+		ul li{
+			float: left;
+			width:64px;
+			height:16px;
+			text-align: center;
+			border-left: 1px solid #c8c8c8;
+			margin-top: 8px;
+			a{
+				color:#a4a4a4;
+			}
+		}	
+	}
+	
+}
+#header_div2{
+	background: #fafafa;
+	height:70px;
+	overflow: hidden;
+	article{
+		width:1200px;
+		margin:20px auto;
+		img{
+			display: block;
+			float: left;
+			margin:-20px 375px 0 0;
+		}
+		#txt{
+			width:433px;
+			height:32px;
+  			border:1px solid #eaeaea;
+  			display: block;
+  			float: left;
+		}
+		#btn1{
+			width:34px;
+			height:34px;
+			border:1px solid #eaeaea;
+			border-left:none;
+			background:#fff url(../images/fdj_03.jpg) center center no-repeat;
+			display: block;
+			float: left;
+		}
+		.gwc{
+	        display: block;
+	        float: left;
+	        .sc_pic {
+	        width: 32px;
+	        height: 32px;
+	        border: 1px solid #eaeaea;
+	        background: url(../images/跨客城_06.jpg) #fff center center no-repeat;
+	        position: relative;
+	        float: left;
+	        margin: 0 20px 0 20px; }
+	    }
+    	.sc_num {
+		  position: absolute;
+		  padding: 1px 6px;
+		  border-radius: 50%;
+		  background: #ca151d;
+		  color: #fff;
+		  top: -10px;
+		  left: 22px;
+		  z-index: 1; 
+		  font-size: 12px;
+		}
+		.login{
+			float: left;
+			width:109px;
+			height:32px;
+			border:1px solid #eaeaea;
+			background:#fff;
+			a{
+				font-size: 12px;
+				display:inline-block;
+				width:53px;
+				height:15px;
+				text-align: center;
+				margin-top:8px;
+				color:#555;
+			}
+			a:nth-child(1){
+				border-right: 1px solid #f0ebeb;
+			}
+			a:nth-child(2){
+				border-left: 1px solid #f0f7ff;
+			}
+		}
+	}
+}
+#header_div3{
+	height:42px;
+	background:#3a3a3a;
+	article{
+		width:1200px;
+		margin:0 auto;
+		#category_list{ 
+			position: relative;
+			.all_goods{
+				display: block;
+				width:224px;
+				height:42px;
+				line-height: 42px;
+				border-right: 1px solid #eaeaea;
+				border-left: 1px solid #eaeaea;
+				float: left;
+				background: #C81118;
+				color:#fff;
+				font-size: 14px;
+				padding-left: 16px;
+			}
+			#cat_list{
+				position: absolute;
+				top:42px;
+				left:0px;
+				z-index: 2; 
+				width:240px;
+				height:450px;
+				background-color:rgba(0, 0, 0, 0.6);
+
+				li{
+					margin:10px 0 20px 0;
+				}
+				li .cat_nav{
+					margin-left: 20px;
+					a{
+						color:#a4a4a4;
+						font-size: 14px;
+					}
+					h3 a{
+						color:#fff;
+						font-size: 16px;
+					}
+				}
+				li #cat_more{
+					position: absolute;
+					left:240px;
+					top:0px;
+					width: 648px;
+					height:448px;
+					background:#fff;
+					border-top:1px solid #eaeaea;
+					border-bottom: 1px solid #eaeaea;
+				}
+			}
+		}
+		.header_nav{
+			float: left;
+			ul{				
+				width:933px;
+				height:42px;
+				line-height: 42px;
+				margin-left:25px;
+				li{
+					float: left;
+					text-align: center;
+					height:42px;
+					a{
+						font-size: 14px;
+						color:#fff;
+						height:41px;
+						span:hover{
+							border-bottom:3px solid #ca151d; 
+						}
+					}
+					a:hover{
+						background:#333;
+					}
+				}
+				li:nth-child(1) a{
+					width:86px;
+				}
+				li:nth-child(2) a{
+					width:120px;
+				}
+				li:nth-child(3) a{
+					width:106px;
+				}
+				li:nth-child(4) a{
+					width:92px;
+				}
+				li:nth-child(5) a{
+					width:96px;
+				}
+				li:nth-child(6) a{
+					width:106px;
+				}
+				li:nth-child(7) a{
+					width:106px;
+				}
+			}
+		}	
+	}
+	
+}

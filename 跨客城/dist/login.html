@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<script type='text/html' id='mobileregTemplate'>
+<div class="dlzc_reg">
+	<form action='/simple/reg_act' method='post' style="display: inline-block;" id="pmreg_form">
+		<div class="dlzc_reg_head_l">
+			手机号注册
+		</div>
+		<div class="dlzc_reg_head_r">
+			<a id="zjdl_login">直接登录</a>
+		</div>
+		<div class="dlzc_reg_center">
+			<div class="dlzc_reg_center_m">
+				<div class="m_logo">
+					<img src="/views/kk/skin/default/image/m_logo.png" alt="">
+				</div>
+				<div class="m_input">
+					<input type="tel" placeholder="请输入手机号" autocomplete="off" spellcheck="false" tabindex="1" name="mobile" class="zc_tel_input" zcmerror="0">
+				</div>
+				<div class="m_clear clear_mobile"><img src="/views/kk/skin/default/image/clear.png" alt=""></div>
+			</div>
+			<div id="captcha" slidererror = "0"></div>
+			<div class="dlzc_reg_center_c">
+				<div class="c_l">
+					<div class="c_input">
+						<input type="tel"  spellcheck="false" tabindex="5" maxlength="4" placeholder="请输入短信验证码" name="phonecode" data-max-length="4" class="zc_code_input" zccerror="0">
+					</div>
+					<div class="m_clear clear_code"><img src="/views/kk/skin/default/image/clear.png" alt=""></div>
+				</div>
+				<div class="c_huoqu">
+					<input type="button" value="获取验证码" onclick="sendcode_zc(this);" class="c_huoqu_a" id="zc_sendcode" isydj="0">
+				</div>
+			</div>
+			<div class="dlzc_reg_center_p">
+				<div class="m_logo"><img src="/views/kk/skin/default/image/pw.png" alt=""></div>
+				<div class="pw_input">
+					<input type="password" spellcheck="false" tabindex="6" autocomplete="new-password" placeholder="请输入密码"  name="password" class="zc_password_input" zcperror="0">
+				</div>
+				<div class="m_clear clear_password"><img src="/views/kk/skin/default/image/clear.png" alt=""></div>
+			</div>
+		</div>
+		<div class="m_error" zcqterror="0">
+			<div class="m_error_img"></div>
+			<div class="m_error_info"></div>
+		</div>
+		<div class="dlzc_reg_bottom">
+			<button type="button" onclick="return checkregForm()" class="sjzc_button">注册</button>
+		</div>
+	</form>
+</div>
+</script>
+<!-- 手机号登录 -->
+<script type='text/html' id='mobileloginTemplate'>
+<div class="dlzc_mlogin">
+	<form action='/simple/mobile_login_act' method='post' style="display: inline-block;" id="pmml_form">
+		<div class="dlzc_mlogin_head_l">手机号登录</div>
+		<div class="dlzc_mlogin_head_r" id="zhdl_login">账号登录</div>
+		<div class="dlzc_mlogin_center">
+			<div class="dlzc_mlogin_center_m">
+				<div class="m_logo">
+					<img src="/views/kk/skin/default/image/m_logo.png" alt="">
+				</div>
+				<div class="m_input">
+					<input type="tel" placeholder="请输入手机号" autocomplete="off" spellcheck="false" tabindex="1" name="mobile" class="ml_tel_input" value="" dlmerror="0">
+				</div>
+				<div class="ml_clear clear_mobile_l"><img src="/views/kk/skin/default/image/clear.png" alt=""></div>
+			</div>
+		</div>
+		<div id="captchadl" slidererror = "0"></div>
+		<div class="dlzc_mlogin_center_c">
+			<div class="ml_l">
+				<div class="c_input">
+					<input type="tel" autocomplete="off" spellcheck="false" tabindex="5" maxlength="4" placeholder="请输入短信验证码" name="phonecode" data-max-length="4" class="ml_code_input" dlcerror="0">
+				</div>
+				<div class="ml_clear clear_code_l"><img src="/views/kk/skin/default/image/clear.png" alt=""></div>
+			</div>
+			<div class="ml_huoqu">
+				
+				<input type="button" value="获取验证码" onclick="sendcode_dl(this)" class="ml_huoqu_a" id="dl_sendcode" isydj="0">
+			</div>
+		</div>
+		<div class="ml_error" dlqterror="0">
+			<div class="ml_error_img"></div>
+			<div class="ml_error_info"></div>
+		</div>
+		<div class="dlzc_mlogin_bottom">
+			<button type="button" onclick="return checksjlForm()" class="sjdl_button">登录</button>
+		</div>
+	</form>
+</div>
+<div class="dlzc_dibu">
+	<div class="find_password"><a href="/simple/find_password">忘记密码？</a></div>
+	<div class="mobile_zhuce" id="sjzc_reg">手机快捷注册</div>
+</div>
+</script>
+<!-- 账号密码登录 -->
+<script type='text/html' id='zhloginTemplate'>
+<div class="dlzc_zhlogin">
+	<form action='/simple/login_act' method='post' style="display: inline-block;" id="pzhl_form">
+		<div class="dlzc_zhlogin_head_l" id="sjdl_login">手机号登录</div>
+		<div class="dlzc_zhlogin_head_r">账号登录</div>
+		<div class="dlzc_zhlogin_center">
+			<div class="dlzc_zhlogin_center_m">
+				<div class="zhl_logo">
+					<img src="/views/kk/skin/default/image/zh.png" alt="">
+				</div>
+				<div class="m_input">
+					<input type="text" placeholder="请输入手机号/用户名/邮箱" autocomplete="off" spellcheck="false" tabindex="1" name="login_info" class="zhl_un_input" value="">
+				</div>
+				<div class="zhl_clear clear_username_zhl"><img src="/views/kk/skin/default/image/clear.png" alt=""></div>
+			</div>
+			<div class="dlzc_zhlogin_center_p">
+				<div class="m_logo"><img src="/views/kk/skin/default/image/pw.png" alt=""></div>
+				<div class="zhl_pw_input">
+					<input type="password" spellcheck="false" tabindex="6" autocomplete="new-password" placeholder="请输入密码" name="password" class="zhl_password_input">
+				</div>
+				<div class="zhl_clear clear_zhl_password"><img src="/views/kk/skin/default/image/clear.png" alt=""></div>
+			</div>
+		</div>
+		<div class="zhl_error" errorinput="">
+			<div class="zhl_error_img"></div>
+			<div class="zhl_error_info">账号或密码错误</div>
+		</div>
+		<div class="dlzc_zhlogin_bottom">
+			<button type="button" onclick="return checkzhlForm()" class="zhdl_button">登录</button>
+		</div>
+	</form>
+</div>
+<div class="dlzc_dibu">
+	<div class="find_password"><a href="/simple/find_password">忘记密码？</a></div>
+	<div class="mobile_zhuce" id="sjzc_reg">手机快捷注册</div>
+</div>
+</script>
+ <!-- 登录注册弹框 -->
+<div class="dlzc_tk">
+	<div class="dlzc_bg"></div>
+	<div class="dlzc_content">
+		<div class="dlzc_kuang">
+			<div class="dlzc_close"><img src="/views/kk/skin/default/image/close.png" alt=""></div>
+			
+		</div>
+	</div>
+</div>
+</body>
+</html>
+<!-- 手机注册 -->
+

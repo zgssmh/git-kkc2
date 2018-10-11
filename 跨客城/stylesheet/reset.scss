@@ -1,0 +1,22 @@
+@charset "utf-8";
+html,body,div,ul,ol,dl,dt,dd,p,input,form,
+h1,h2,h3,h4,h5,h6,fieldset,img,table{
+	margin: 0;
+	padding:0;
+}
+img,input,a{
+	display:inline-block;
+	border:0;
+}
+ul,ol,li{
+	list-style: none;
+}
+a,u{
+	text-decoration: none;
+}
+b,strong,h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+em,i{
+	font-style: normal;
+}

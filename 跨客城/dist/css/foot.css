@@ -1,0 +1,134 @@
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #555; }
+
+.foot {
+  background: #f0f0f0; }
+
+.foot .foot_auto {
+  width: 1200px;
+  margin: 20px auto; }
+
+.foot .service {
+  border-bottom: 1px solid #E8E8E8;
+  padding: 46px 0 46px; }
+
+.foot .service ul {
+  height: 47px;
+  overflow: hidden; }
+
+.foot .service ul li {
+  float: left;
+  line-height: 47px;
+  font-size: 18px;
+  color: #3a3a3a;
+  height: 47px;
+  width: 300px;
+  text-align: left; }
+
+.foot .service ul li i {
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 16px;
+  vertical-align: middle;
+  color: #ca151d;
+  font-size: 32px;
+  border: 1px solid #ca151d;
+  border-radius: 50%;
+  box-sizing: border-box; }
+
+.foot .service ul li strong {
+  font-size: 16px;
+  color: #333;
+  font-weight: normal;
+  display: inline-block;
+  margin-left: 5px; }
+
+.foot .help {
+  padding: 26px 0 18px;
+  overflow: hidden; }
+
+.foot .help .prompt_link {
+  width: 944px;
+  min-height: 164px;
+  margin-top: 2px;
+  border-right: 1px solid #ebebeb;
+  float: left; }
+
+.foot .help .prompt_link dl {
+  float: left;
+  width: 20%;
+  position: relative; }
+
+.foot .help .prompt_link dl dt .line {
+  background: #a8a8a8;
+  width: 22px;
+  height: 2px;
+  margin: 2px 0 12px 0; }
+
+.foot .help .prompt_link dl dt .title {
+  font-size: 14px;
+  padding-bottom: 12px;
+  color: #3a3a3a;
+  line-height: 21px; }
+
+.foot .help .prompt_link dl dd {
+  font-size: 12px;
+  line-height: 24px; }
+
+.foot .help .prompt_link dl dd a {
+  color: #666; }
+
+.foot .help .prompt_link dl dd a:hover {
+  color: #ca151d; }
+
+.foot .help .contact {
+  width: 210px;
+  min-height: 164px;
+  margin-top: 2px;
+  padding-left: 40px;
+  float: left; }
+
+.foot .help .contact .line {
+  background: #a8a8a8;
+  width: 22px;
+  height: 2px;
+  margin: 2px 0 12px 0; }
+
+.foot .help .contact em {
+  font-size: 24px;
+  color: #3a3a3a;
+  display: block;
+  line-height: 24px; }
+
+.foot .help .contact span {
+  display: block;
+  font-size: 12px;
+  line-height: 24px; }
+
+.foot .help .contact a {
+  margin-top: 10px;
+  width: 161px;
+  height: 35px;
+  display: block;
+  background: #FFF;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  line-height: 35px;
+  text-align: center;
+  color: #900;
+  cursor: pointer;
+  border-radius: 5px; }
+
+.foot .copy {
+  line-height: 2;
+  color: #999;
+  background: #fafafa;
+  padding: 20px; }
+
+.foot .copy a {
+  margin: 0 5px; }

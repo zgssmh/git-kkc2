@@ -1,0 +1,41 @@
+.play {
+  height: 450px;
+  overflow: hidden;
+  position: relative; }
+  .play ol {
+    position: absolute;
+    right: 550px;
+    bottom: 5px;
+    z-index: 2; }
+  .play ol li {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 3px;
+    display: block;
+    cursor: pointer;
+    background: #fcf2cf;
+    border: 1px solid #f47500;
+    border-radius: 50%;
+    /*padding: 2px 6px;*/
+    color: #d94b01;
+    font-family: arial;
+    font-size: 12px; }
+  .play .active {
+    /*padding: 3px 8px;*/
+    font-weight: bold;
+    color: #ffffff;
+    background: #ffb442;
+    position: relative;
+    /*bottom: 2px; */ }
+  .play ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+  .play ul li {
+    height: 450px;
+    float: left; }
+  .play ul img {
+    float: left;
+    height: 450px; }
